@@ -527,5 +527,5 @@ a.gnb_2da::after { background-color: #6F39C4; }
 #ctt_con iframe { width: 100%; margin-bottom: 3em; }
 #ctt_con { text-align: center; font-size: 1.3em; }
 #ft { display: none;}
-#ctt_company #ctt_con { padding: 0;}
-#ctt_company { margin: 0; padding: 0;}
+#ctt.ctt_company #ctt_con { padding: 0;}
+#ctt.ctt_company { margin: 0; padding: 0;}
