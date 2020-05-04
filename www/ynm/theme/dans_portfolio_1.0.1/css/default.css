@@ -472,7 +472,7 @@ html{font-size : 12px;}
 .gnb_1dli .drop_btn i{transform: rotate( 45deg); -webkit-transition: .2s ease-in-out; -o-transition: .2s ease-in-out; transition: .2s ease-in-out;}
 .gnb_1dli:hover .drop_btn i{transform: rotate( 225deg)}
 .gnb_1dli:hover .gnb_2dul_box{height : 90px;}
-.gnb_1dli.dmenu3:hover .gnb_2dul_box{height : 130px;}
+.gnb_1dli.dmenu4:hover .gnb_2dul_box{height : 130px;}
 a.gnb_2da {position: relative;}
 a.gnb_2da:after {content : ''; position: absolute; bottom : 0; left : 0; width : 0px; height : 2px; background-color: #231815; }
 a.gnb_2da:hover:after {content : '';position: absolute; bottom : 0; left : 0; width : 50%; height : 2px;   transition: .3s ease-in-out;}
