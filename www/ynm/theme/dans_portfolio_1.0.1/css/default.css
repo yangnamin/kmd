@@ -21,7 +21,7 @@ select {margin:0}
 p {margin:0;padding:0;word-break:break-all}
 hr {display:none}
 pre {overflow-x:scroll;font-size:1.1em}
-a {color:#000;text-decoration:none}
+a {color:white;text-decoration:none}
 
 *, :after, :before {
   -webkit-box-sizing:border-box;
@@ -260,8 +260,8 @@ button.btn02 {display:inline-block;margin:0;padding:7px;border:1px solid #3b3c3f
 .btn_confirm {text-align:right} /* 서식단계 진행 */
 
 .btn_submit {border:0;background:#231815;color:#fff;cursor:pointer;border-radius:3px}
-.btn_submit:hover {background:#2375eb}
-.btn_close {border:1px solid #dcdcdc;cursor:pointer;border-radius:3px;background:#fff}
+.btn_close {border:1px solid #dcdcdc;cursor:pointer;border-radius:3px;background:black;}
+.btn_submit:hover, .btn_close:hover {background-color: #6F39C4;}
 a.btn_close {text-align:center;line-height:50px}
 
 a.btn_cancel {display:inline-block;background:#969696;color:#fff;text-decoration:none;vertical-align:middle}
@@ -274,8 +274,8 @@ button.btn_frmline {font-size:1em}
 /* 게시판용 버튼 */
 a.btn_b01,.btn_b01 {display:inline-block;color:#bababa;text-decoration:none;vertical-align:middle;border:0;background:transparent}
 .btn_b01:hover, .btn_b01:hover {color:white;}
-a.btn_b02,.btn_b02 {display:inline-block;background:#253dbe;padding:0 10px;color:#fff;text-decoration:none;border:0;vertical-align:middle}
-a.btn_b02:hover, .btn_b02:hover {background:#0025eb}
+a.btn_b02,.btn_b02 {display:inline-block;background:#6F39C4;padding:0 10px;color:#fff;text-decoration:none;border:0;vertical-align:middle}
+a.btn_b02:hover, .btn_b02:hover {background:#6F39C4}
 a.btn_b03, .btn_b03 {display:inline-block;background:#fff;border:1px solid #b9bdd3;color:#646982;text-decoration:none;vertical-align:middle}
 a.btn_b03:hover, .btn_b03:hover {background:#ebedf6}
 a.btn_b04, .btn_b04 {display:inline-block;background:#fff;border:1px solid #ccc;color:#707070;text-decoration:none;vertical-align:middle}
@@ -369,7 +369,7 @@ box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075);
 .td_stat {width:60px;text-align:center}
 
 .txt_active {color:#5d910b}
-.txt_done {color:#e8180c}
+.txt_done {color:#6F39C4}
 .txt_expired {color:#ccc}
 .txt_rdy {color:#8abc2a}
 
@@ -517,32 +517,41 @@ a.gnb_2da:hover:after {content : '';position: absolute; bottom : 0; left : 0; wi
 .gnb_1da,
 a.gnb_2da
 { color: #fff; }
-#gnb .gnb_1dli:hover > a,
-a.gnb_2da:hover { color: #6F39C4; }
-a.gnb_2da::after { background-color: #6F39C4; }
 
 #wrapper .main_slider_baner { padding: 0; }
-#container { background-color: black; }
-
 #ctt_con iframe { width: 100%; margin-bottom: 3em; }
 #ctt_con { text-align: center; font-size: 1.3em; color: white; }
 #ft { display: none;}
 #ctt.ctt_company #ctt_con { padding: 0;}
 #ctt.ctt_company { margin: 0; padding: 0;}
-#container .swiper-pagination-bullet-active { background-color: #6F39C4; }
 #container .swiper-button-next, .swiper-container-rtl .swiper-button-prev { background-size: none;}
-#container #ctt { background-color: black; }
-#bo_v #bo_vc { background-color: black; color: white; }
-a, #wrapper .lat .lat_title a,
-.tbl_head01 thead,
-.tbl_frm01 { color: white; }
-html,
-bo_w,
-#wrapper .lat,
-.tbl_frm01 th { background-color: black; }
-input[type=text], input[type=password], textarea { background-color: black; color: white; }
+
+#wrapper .lat .lat_title a, .tbl_head01 thead, .tbl_frm01, #wrapper #fregister section,
+#wrapper .fregister_agree input[type="checkbox"] + label, #bo_v_info, #bo_v_con { color: white; }
+
+html, #container, bo_w, #wrapper .lat, .tbl_frm01 th, #container #ctt, #wrapper #fregister textarea,
+#wrapper #fregister_private div, #wrapper #register_form { background-color: black; }
+
+#gnb .gnb_1dli:hover > a,
+a.gnb_2da:hover, #wrapper #login_password_lost, #wrapper #reg_result i, #wrapper #reg_result .reg_result_p,
+#wrapper .lat .lt_more { color: #6F39C4; }
+a.gnb_2da::after, #container .swiper-pagination-bullet-active, #wrapper #fregister p:before,
+#wrapper #fregister p, #wrapper #fregister_private table th, #wrapper #fregister_chkall,
+#wrapper #register_form h2, #wrapper .reg_btn_submit, #wrapper .btn_bo_adm input { background-color: #6F39C4; }
+
+#wrapper .fregister_agree input[type="checkbox"]:checked + label span,
+#wrapper .chk_box input[type="checkbox"]:checked + label span { background-color: #6F39C4; border-color: #6F39C4; }
+
+input[type=text], input[type=password], textarea, #bo_v #bo_vc, #wrapper .mbskin .mbskin_box, #wrapper .register_form_inner,
+#bo_w .tbl_frm01 textarea, #bo_w .frm_file, #wr_content
+{ background-color: black; color: white; }
+
 select { padding: 11px 0; background-color: black; color: white; }
 .btn_submit, #wrapper .btn_bo_user li { background: transparent; }
-
-#social { margin-top: 150px; text-align: center; font-size: 3em; }
+#wrapper .register .btn_confirm .btn_submit { border: 1px solid white; }
+#social { position: fixed; bottom: 150px; text-align: center; font-size: 3em; }
 #social a { margin: 0 10px;}
+#wrapper #captcha #captcha_key { color: black; }
+#bo_w table { margin-top: 10px; }
+#wrapper #bo_vc, #wrapper #bo_vc_w, #wrapper #bo_v_top, #wrapper #bo_v_info, #wrapper #bo_v_atc,
+#wrapper #bo_v_bot, #wrapper #btn_confirm { margin-right: 10px; }
