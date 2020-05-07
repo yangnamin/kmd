@@ -86,9 +86,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         </div>
     </nav>
     <div id="social">
-      <a href="https://www.instagram.com/kimmoondal_/"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/%EA%B9%80%EB%AC%B8%EB%8B%AC-%EC%82%AC%EC%A7%84%EA%B4%80-110231647137377/"><i class="fab fa-facebook-square"></i></a>
-      <a href="https://pf.kakao.com/_xfxmCCxb"><i class="far fa-comment-dots"></i></a>
+      <a href="https://www.instagram.com/kimmoondal_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/%EA%B9%80%EB%AC%B8%EB%8B%AC-%EC%82%AC%EC%A7%84%EA%B4%80-110231647137377/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://pf.kakao.com/_xfxmCCxb" target="_blank"><i class="far fa-comment-dots"></i></a>
     </div>
     <!-- 모바일 사이드바 NADAN.KR -->
 	<div id="hd_side_menu">
